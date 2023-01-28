@@ -13,6 +13,7 @@ driver = webdriver.Chrome()
 # ubereatsURL.tsv contains list of lists and every item in list have City name on 0th element and URL to city for ubereats on 1st element position
 # This is a tab separated file
 # For example, Abilene	https://ubereats.com/abilene/
+# Need to add Los Angeles and other major metros 
 with open('ubereatsURL.tsv') as tsvfile:
 	for item in tsvfile:
 		urls.append(item.split('\t')[1].strip('\n').strip())
